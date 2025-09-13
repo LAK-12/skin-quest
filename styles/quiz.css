@@ -1,0 +1,216 @@
+body {
+  background-image: url("../skincare-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* keeps it in place */
+}
+
+.header {
+  
+  padding-top: 25px;
+  padding-bottom: 25px;
+  
+}
+
+h1 {
+  margin:0;
+  font-family:  'Merriweather', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #9CAF88;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0; 
+  animation: fadeIn 1s ease forwards;
+  
+}
+
+.sub-header {
+  margin-top: 10px;
+  font-size: 22px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  animation: shimmer 3s linear infinite;
+  background: linear-gradient(90deg, #0f1301, #c9eb20, #f488a8, #ff0066);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite; 
+}
+
+
+
+.intro {
+  margin: 10px auto;      
+  text-align: center;     
+  padding: 18px;
+  background-color: #E0E5DA;  
+  border-radius: 12px;      
+  backdrop-filter: blur(8px); 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15); 
+
+}
+
+.answer {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: #2f3640;                   
+}
+
+
+
+
+.questions {
+  background-color:  #f1e0e2; 
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-style:solid;
+  border-color: #9CAF88;
+  border-width: 3px;
+  border-radius: 12px;
+  width: 500px;                    
+  max-width: 90%;
+  margin: 30px auto;  
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  cursor: pointer;
+  
+}
+
+.questions input[type="radio"] {
+  appearance: none; /*remove default */
+  -webkit-appearance: none; /*appear same on all broswers */
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #9CAF88; 
+  border-radius: 20px;         
+  cursor: pointer;
+  margin-right: 8px;
+  position: relative;
+  top: 3px; 
+  background-color: #fff;     
+  transition: all 0.3s ease;
+}
+
+
+.questions input[type="radio"]:checked {
+  background-color: #9CAF88;  
+  border-color: #9CAF88;
+}
+
+
+.questions input[type="radio"]:hover {
+  box-shadow: 0 0 6px rgba(156, 175, 136, 0.6);
+}
+
+.questions p {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500px;
+  line-height: 1.4;
+  padding-left: 25px;  
+  text-indent: -20px; /*first line stays there */
+}
+
+.questions label{
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #2f3640;
+  margin-left: 10px;
+
+  
+}
+
+.questions label:hover {
+  text-shadow: 10px 10px 10px rgba(228, 165, 204, 0.5);
+
+}
+
+.q {
+  padding-left: 10px;
+}
+
+.form-buttons {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px; 
+
+}
+
+
+
+.submit, .reset{
+  font-family:  'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-style: solid;
+  border-radius: 30px;
+  background-color: #dae4cd;
+  border-color: rgb(104, 3, 58);
+  border-width: 2px;
+  color: rgb(104, 3, 58);
+  transition: all 0.2s; /*opacity and box shadow */
+  margin: 0 10px; /*top-buttom left-right */
+
+  
+  
+}
+
+.submit:hover, .reset:hover {
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+.submit:active, .reset:active {
+  background-color: rgb(199, 85, 97); 
+  cursor: pointer;
+  transform: scale(0.97); 
+}
+
+
+
+
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+
+
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+
+
+/* 
+@keyframes fadeIn {
+  from { opacity: 0; }  /* starting style 
+  to   { opacity: 1; }  /* ending style 
+}
+
+fadeIn → name of the keyframe you defined.
+
+1s → duration (animation runs for 1 second).
+
+ease → timing function (controls speed curve, e.g. ease, linear, ease-in-out).
+
+forwards → tells CSS to keep the final state after animation finishes. */
